@@ -10837,3 +10837,43 @@ section {
   padding-top: 9rem;
   padding-bottom: 9rem;
 }
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('../assets/parque_agua_azul.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* TEXTO */
+.hero-section h1 {
+  font-size: 3rem;
+  animation: fadeInDown 1s ease;
+}
+
+.hero-section p {
+  animation: fadeInUp 1.5s ease;
+}
+
+/* ANIMACIONES */
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+} 
